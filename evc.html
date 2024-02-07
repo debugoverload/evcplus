@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EVCPLUS</title>
+</head>
+<body>
+
+<h1>-EVCPLUS-</h1>
+
+
+
+<form id="evcForm">
+  <label for="pin">Please enter your Pin number:</label>
+  <input type="password" id="pin" name="pin" required><br><br>
+     
+                    <div id="output"></div><br><br>
+
+  <label for="choice">Choose an option:</label>
+  <select id="choice" name="choice">
+    <option>Choose an option</option>
+    <option value="1">Balance Query</option>
+    <option value="2">E-voucher</option>
+    <option value="3">Bill payment</option>
+    <option value="4">Send money</option>
+    <option value="5">Mini Statement</option>
+    <option value="6">Salaam Bank</option>
+    <option value="7">Manage account</option>
+    <option value="8">Taj</option>
+    <option value="9">Bill payment</option>
+  </select><br><br>
+
+            <div id="output1"></div><br><br>
+
+  <label for="airtimeChoice">Enter airtime choice:</label>
+  <input type="text" id="airtimeChoice" name="airtimeChoice"><br><br>
+  <div id="output2"></div>
+  <label for="airtimeAmount">Enter airtime amount:</label>
+  <input type="number" id="airtimeAmount" name="airtimeAmount"><br><br>
+
+      <div id="output3"></div><br><br>
+  <button type="submit">Submit</button>
+</form>
+
+<script src="evc.js"></script>
+
+</body>
+</html>
