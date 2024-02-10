@@ -1,0 +1,124 @@
+.main_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  /* gap: 0.15rem; */
+}
+.phone_keyboard{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+  width: 500px;
+  height: 600px;
+  background:rgb(0, 0, 0);
+  border: 1px solid gainsboro;
+  border-radius: 20px;
+  color: white;
+
+}
+.display{
+  background-color: rgb(0, 0, 0);
+  width: 500px;
+  height: 150px;
+  
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 1rem 1rem;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: d7;
+  color: rgb(255, 255, 255);
+  
+
+}
+.number_cont{
+  width: 450px;
+  height: 120px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  border-bottom-left-radius:5px ;
+  border-bottom-right-radius: 5px ;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  flex-flow: row;
+
+  /* background-color: #FF2849; */
+}
+
+.keyboard_numbers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 90px;
+  border-left: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgb(255, 255, 255);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-collapse: none;
+  font-size: 40px;
+  font-family: d7;
+  cursor: pointer;
+  /* text-align: center; */
+ 
+  
+
+
+}
+.call_buttons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row;
+  width: 450px;
+  height: 90px;
+  gap: 200px;
+  /* border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-left: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgb(255, 255, 255); */
+
+}
+
+@font-face{
+  font-family: d7;
+  src: url("font/digital-7.ttf");
+}
+.button_cancel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: none;
+  background-color: #FF2849;
+}
+
+.button_cancel:hover {
+  background-color: #e52441;
+}
+section{
+  padding-block: 5rem 3rem;
+  background-color: gainsboro;
+ }
+
+ .button_call {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: none;
+  background-color: #30C04F;
+}
+
+.button_call:hover {
+  background-color: #2bac47;
+}
