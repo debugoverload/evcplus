@@ -1,60 +1,83 @@
-console.log("-EVCPLUS-");
+ const balance = 910;
+  const pin = 1234;
 
-const balance = 910;
-const pin = 1234;
+  const form = document.getElementById("evcForm");
+  const outputDiv = document.getElementById("output");
+  const outputDiv1 = document.getElementById("output1");
+  const outputDiv2 = document.getElementById("output2");
+  const outputDiv3 = document.getElementById("output3");
 
-const userpin = prompt("please enter your Pin number:");
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
 
-if (pin == userpin) {
-    console.log("1. Balance Query");
-    console.log("2. E-voucher");
-    console.log("3. Bill payment");
-    console.log("4. Send money");
-    console.log("5. Mini Statement");
-    console.log("6. Salaam Bank");
-    console.log("7. Manage account");
-    console.log("8. Taj");
-    console.log("9. Bill payment");
+    const userpin = document.getElementById("pin").value;
 
-    const choice = prompt("Enter your choice:");
-    const airtimeChoice = prompt("Enter airtime choice:");
-    const airtimeAmount = prompt("Enter airtime amount:");
+    if (pin == userpin) {
+        outputDiv.textContent = "corrected PIN.";
+      const choice = document.getElementById("choice").value;
+      const airtimeChoice = document.getElementById("airtimeChoice").value;
+      const airtimeAmount = parseFloat(document.getElementById("airtimeAmount").value);
 
-    let choiceNumber = parseInt(choice);
-    switch (choiceNumber) {
+      switch (parseInt(choice)) {
         case 1:
-            checkBalance(choiceNumber);
-            break;
+          checkBalance();
+          break;
         case 2:
-            displayevoucher(choiceNumber);
-            airtime(airtimeChoice, airtimeAmount);
-           
+          displayEVoucher();
+          rechargeAirtime(airtimeChoice, airtimeAmount);
+          break;
+          case 3:
+                billPayment();
+                break;
+        // Add other cases as needed
+        default:
+          outputDiv1.textContent = "Invalid choice.";
+      }
+    } else {
+      outputDiv.textContent = "Incorrect PIN. Please try again.";
+    }
+  });
+
+
+  function checkBalance() {
+    outputDiv1.textContent = "Your Balance is " + balance;
+  }
+
+  function displayEVoucher() {
+    outputDiv1.textContent = "1.self Airtime:\n    2.friend Airtime:\n   3.self Data recharge:\n    4.internet network Airtime:";
+}
+function rechargeAirtime(airtimeChoice, airtimeAmount) {
+    switch (airtimeChoice) {
+        case '1':
+            if (balance > airtimeAmount) {
+                let recharged = balance - airtimeAmount;
+                outputDiv2.textContent = 'You have recharged: ' + airtimeAmount;
+            }
+            break;
+        case '2':
+            if (balance > airtimeAmount) {
+                outputDiv3.textContent = "Enter your friend's number:";
+            }
+            break;
+        case '3':
+            if (balance > airtimeAmount) {
+                let recharged = balance - airtimeAmount;
+                outputDiv3.textContent = 'You have recharged for self data: ' + airtimeAmount;
+            }
+            break;
+        case '4':
+            if (balance > airtimeAmount) {
+                let recharged = balance - airtimeAmount;
+                outputDiv3.textContent = 'You have recharged for internet network airtime: ' + airtimeAmount;
+            }
+            break;
+        default:
+            outputDiv2.textContent = "Invalid choice.";
+            break;
     }
 }
 
-function checkBalance(choice) {
-    if (choice == 1) {
-        console.log("Your Balance is ", balance);
-    }
+function billPayment() {
+     outputDiv1.textContent = "Enter your Bill number:";
 }
 
-function displayevoucher(choice) {
-    if (choice == 2) {
-        console.log("1. self Airtime:");
-        console.log("2. friend Airtime:");
-        console.log("3. MIFI Packages:");
-        console.log("4. self Data recharge:");
-        console.log("5. internet network Airtime:");
-    }
-}
-
-function airtime(airtimeChoice, airtimeAmount) {
-    if (airtimeChoice == 1 && balance > airtimeAmount) {
-        let recharged = balance- airtimeAmount;
-        console.log('You have recharged:', airtimeAmount);
-    }
-    if(airtimeChoice == 2 && balance > airtimeAmount){
-        console.log("enter your friend's number:")
-        
-    }
-}
