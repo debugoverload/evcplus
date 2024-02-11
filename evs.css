@@ -72,6 +72,12 @@
 
 
 }
+.keyboard_numbers:hover{
+  box-shadow: #c1bfbf 0 3px;
+  background: #8d8c8c;
+  
+}
+
 .call_buttons{
   display: flex;
   justify-content: space-around;
