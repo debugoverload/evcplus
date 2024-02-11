@@ -73,8 +73,9 @@
 
 }
 .keyboard_numbers:hover{
-  box-shadow: #c1bfbf 0 3px;
-  background: #8d8c8c;
+  box-shadow: #c1bfbf 01px 3px;
+  background: #f0e8e8;
+  color: #ff0026;
   
 }
 
@@ -90,9 +91,9 @@
   border-top-right-radius: 5px;
   border-left: 1px solid rgb(255, 255, 255);
   border-right: 1px solid rgb(255, 255, 255); */
-  border-bottom: 2px solid rgb(255, 255, 255);
+  /* border-bottom: 2px solid rgb(255, 255, 255);
   border-bottom-left-radius:5px ;
-  border-bottom-right-radius: 5px ;
+  border-bottom-right-radius: 5px ; */
 
 }
 
