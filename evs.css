@@ -39,9 +39,7 @@
 .number_cont{
   width: 450px;
   height: 120px;
-  border-bottom: 2px solid rgb(255, 255, 255);
-  border-bottom-left-radius:5px ;
-  border-bottom-right-radius: 5px ;
+ 
   display: flex;
   justify-content:space-between;
   align-items: center;
@@ -60,11 +58,15 @@
   border-right: 1px solid rgb(255, 255, 255);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  border-bottom-left-radius:5px ;
+  border-bottom-right-radius: 5px ;
   border-collapse: none;
   font-size: 40px;
   font-family: d7;
   cursor: pointer;
   /* text-align: center; */
+  
  
   
 
@@ -82,6 +84,9 @@
   border-top-right-radius: 5px;
   border-left: 1px solid rgb(255, 255, 255);
   border-right: 1px solid rgb(255, 255, 255); */
+  border-bottom: 2px solid rgb(255, 255, 255);
+  border-bottom-left-radius:5px ;
+  border-bottom-right-radius: 5px ;
 
 }
 
