@@ -14,7 +14,9 @@
   height: 580px;
   background: slategrey;
   border: 1px solid gainsboro;
-  border-radius: 20px;
+  
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
   color: white;
 
 }
@@ -22,9 +24,10 @@
   background-color: slategrey;
   width: 500px;
   height: 200px;
-  
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
   border: 1px solid gainsboro;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
