@@ -31,7 +31,7 @@ $(document).ready(function() {
           var enteredPin = prompt("Please enter your PIN:");
           if (enteredPin == pin) {
               balance -= amount;
-              display.text("Lacagta aad ku Shubtay waa: $" + amount);
+              display.text("Waxaad  ku Shubtay NUmberkan:" + anyNumber +"Waa:  $" + amount);
           } else {
               display.text("Incorrect PIN");
           }
